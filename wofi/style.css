@@ -1,0 +1,77 @@
+@define-color clear rgba(0, 0, 0, 0.0);
+@define-color primary rgba(0, 0, 0, 0.75);
+@define-color background #1d2021;
+@define-color foreground #fe8019;
+@define-color border #282828;
+@define-color selection #928374; /* Более темный и прозрачный цвет выделения */
+@define-color highlight rgba(146, 131, 116, 0.25); /* Темный и прозрачный цвет для выделения */
+
+window {
+    margin: 2px;
+    border: 2px solid;
+    border-color: @border;
+    background-color: @background;
+    border-radius: 7px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+    color: @foreground;
+}
+
+#input {
+padding: 12px;
+margin: 4px;
+margin-bottom: 8px;
+border: none;
+color: @foreground;
+background-color: @border;
+outline: none;
+}
+
+#inner-box {
+margin: 2px;
+border: 0px solid;
+background-color: @clear;
+border-radius: 8px;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+border-radius: 8px;
+background-color: @clear;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text:selected {
+margin: 0px 10px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+
+color: @foreground;
+}
+
+#entry {
+padding: 12px;
+margin: 0px 0px;
+border: none;
+border-radius: 0px;
+background-color: transparent;
+color: @foreground;
+}
+
+#entry:selected {
+margin: 0px 0px;
+border: none;
+border-radius: 10px;
+background-color: @highlight;
+color: @foreground;
+}
+
+#img {
+margin-right: 15px;
+}
